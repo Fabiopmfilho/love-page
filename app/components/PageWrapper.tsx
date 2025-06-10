@@ -45,11 +45,11 @@ export default function PageWrapper({
 
   return (
     <>
-      <audio ref={audioRef} src="/audio/love-song.mp3" loop />
+      <audio ref={audioRef} src="/audio/idiota.mp3" loop />
       <AnimatePresence>
         {!started && (
           <motion.div
-            className="fixed inset-0 bg-gradient-to-r from-[#4A00E0] to-[#8E2DE2] flex items-center justify-center z-50"
+            className="fixed inset-0 bg-gradient-to-b from-[#81a6e0] to-[#cc7bc5] flex items-center justify-center z-50"
             initial={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
@@ -60,7 +60,7 @@ export default function PageWrapper({
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
             >
-              Click to Begin
+              Clique aqui
             </motion.button>
           </motion.div>
         )}
