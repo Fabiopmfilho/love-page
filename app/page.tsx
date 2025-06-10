@@ -29,9 +29,9 @@ export default function Home() {
     <PageWrapper>
       <HeartsBackground />
       <div className="grid grid-rows-[20px_1fr_20px] bg-[#81a6e0] bg-gradient-to-b from-[#81a6e0] to-[#cc7bc5] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-        <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start z-20">
+        <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-center z-20">
           <motion.h1
-            className="text-3xl sm:text-5xl font-bold text-center text-white leading-tight"
+            className="text-3xl sm:text-5xl sm:max-w-7/12 font-bold text-center text-white leading-tight"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -81,7 +81,7 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <div className="mt-10 flex flex-col gap-4">
+          <div className="mt-10 flex flex-col gap-4 sm:items-center">
             <motion.p
               className="text-white/80 text-lg text-center sm:text-left max-w-xs"
               initial={{ opacity: 0 }}
